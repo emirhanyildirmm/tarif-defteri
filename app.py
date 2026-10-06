@@ -326,7 +326,7 @@ def tarifleri_api():
 def ana_sayfa():
 
     return send_from_directory(
-        "frontend",
+        ".",
         "index.html"
     )
 
@@ -339,6 +339,6 @@ def frontend_dosyasi(
 ):
 
     return send_from_directory(
-        "frontend",
+        ".",
         dosya_adi
     )
