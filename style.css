@@ -1,0 +1,153 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+header {
+    background:
+        linear-gradient(
+            135deg,
+            #8b0000,
+            #c0392b
+        );
+    color: white;
+    padding: 65px 20px;
+    text-align: center;
+}
+
+.header-icerik {
+    max-width: 900px;
+    margin: auto;
+}
+
+header h1 {
+    font-size: 52px;
+    margin-bottom: 15px;
+}
+
+header p {
+    font-size: 19px;
+    opacity: 0.92;
+    line-height: 1.6;
+}
+
+main {
+    max-width: 1150px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.tanitim {
+    background-color: white;
+    border-radius: 18px;
+    padding: 30px;
+    text-align: center;
+    margin-bottom: 35px;
+    box-shadow:
+        0 5px 20px
+        rgba(0, 0, 0, 0.08);
+}
+
+.tanitim h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.tanitim p {
+    color: #777;
+    font-size: 17px;
+}
+
+.tarifler-grid {
+    display: grid;
+    grid-template-columns:
+        repeat(
+            auto-fit,
+            minmax(300px, 1fr)
+        );
+    gap: 25px;
+}
+
+.tarif-karti {
+    background-color: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow:
+        0 5px 18px
+        rgba(0, 0, 0, 0.10);
+    transition: 0.2s;
+}
+
+.tarif-karti:hover {
+    transform: translateY(-5px);
+    box-shadow:
+        0 10px 25px
+        rgba(0, 0, 0, 0.15);
+}
+
+.tarif-karti img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.tarif-bilgi {
+    padding: 22px;
+}
+
+.tarif-bilgi h2 {
+    font-size: 23px;
+    margin-bottom: 15px;
+    color: #222;
+}
+
+.sure {
+    color: #8b0000;
+    font-weight: bold;
+    margin-bottom: 18px;
+}
+
+.malzeme-baslik {
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.malzemeler {
+    padding-left: 20px;
+    color: #666;
+    line-height: 1.7;
+}
+
+.malzemeler li {
+    margin-bottom: 3px;
+}
+
+.yukleniyor {
+    text-align: center;
+    width: 100%;
+    font-size: 18px;
+    color: #777;
+}
+
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 38px;
+    }
+
+    header p {
+        font-size: 16px;
+    }
+
+    main {
+        margin-top: 25px;
+    }
+}
